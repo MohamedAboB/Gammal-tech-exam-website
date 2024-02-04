@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming FeedBack Page</title>
+  <link rel="icon" type="image/x-icon" href="path_to_your_favicon.png">
+  <link rel="stylesheet" href="stylerating.css">
+</head>
+
+<body>
+  <section>
+    <header>
+        <div class = "logo1">
+          <img src = "2.png">
+        </div>
+      <div class = "sections">
+       
+        <a href = "main.html">Home</a>
+        <a href = "https://www.gammal.tech/" target="_blank">About</a>
+    </div>
+     </header>			
+  </section>
+  <div id="progressBar" style="width: 100%; background-color: #ddd;">
+    <div id="progress" style="height: 5px; width: 0%; background-color: #4CAF50;"></div>
+  </div>
+  <div class="feedback-box">
+    <h2>Feedback on Online Exam</h2>
+    <!-- Only one question is displayed at a time -->
+    <div id="question1" class="question-box" style="display:block;">
+      <p>1. Rate the overall difficulty of the exam..</p>
+      <label><input type="radio" name="q1" value="1"> 1</label>
+      <label><input type="radio" name="q1" value="2"> 2</label>
+      <label><input type="radio" name="q1" value="3"> 3</label>
+      <label><input type="radio" name="q1" value="4"> 4</label>
+      <label><input type="radio" name="q1" value="5"> 5</label>
+    </div>
+
+    <!-- Add similar question divs for other questions -->
+    <div id="question2" class="question-box">
+      <p>2. How satisfied were you with the clarity of the exam instructions?</p>
+      <label><input type="radio" name="q2" value="1"> 1</label>
+      <label><input type="radio" name="q2" value="2"> 2</label>
+      <label><input type="radio" name="q2" value="3"> 3</label>
+      <label><input type="radio" name="q2" value="4"> 4</label>
+      <label><input type="radio" name="q2" value="5"> 5</label>
+    </div>
+    <div id="question3" class="question-box">
+      <p>3. Rate the fairness of the exam questions.</p>
+      <label><input type="radio" name="q3" value="1"> 1</label>
+      <label><input type="radio" name="q3" value="2"> 2</label>
+      <label><input type="radio" name="q3" value="3"> 3</label>
+      <label><input type="radio" name="q3" value="4"> 4</label>
+      <label><input type="radio" name="q3" value="5"> 5</label>
+    </div>
+    <div id="question4" class="question-box">
+      <p>4. How well did the exam align with the course materials and lectures?</p>
+      <label><input type="radio" name="q4" value="1"> 1</label>
+      <label><input type="radio" name="q4" value="2"> 2</label>
+      <label><input type="radio" name="q4" value="3"> 3</label>
+      <label><input type="radio" name="q4" value="4"> 4</label>
+      <label><input type="radio" name="q4" value="5"> 5</label>
+    </div>
+    <div id="question5" class="question-box">
+      <p>5. Rate the overall experience of taking the exam online.</p>
+      <label><input type="radio" name="q5" value="1" onclick="showStarRating()"> 1</label>
+      <label><input type="radio" name="q5" value="2" onclick="showStarRating()"> 2</label>
+      <label><input type="radio" name="q5" value="3" onclick="showStarRating()"> 3</label>
+      <label><input type="radio" name="q5" value="4" onclick="showStarRating()"> 4</label>
+      <label><input type="radio" name="q5" value="5" onclick="showStarRating()"> 5</label>
+    </div>
+    <div id="question6" class="ratefeed" style="display:none;">
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rate the exam:</p>
+      <div class="star-rating">
+        <input type="radio" id="star1" name="examRating" value="1"><label for="star1"></label>
+        <input type="radio" id="star2" name="examRating" value="2"><label for="star2"></label>
+        <input type="radio" id="star3" name="examRating" value="3"><label for="star3"></label>
+        <input type="radio" id="star4" name="examRating" value="4"><label for="star4"></label>
+        <input type="radio" id="star5" name="examRating" value="5"><label for="star5"></label><br>
+      </div>
+      <div class="comments-section">
+        <input type="checkbox" id="additionalCommentsCheck" onclick="toggleComments()">
+        <label for="additionalCommentsCheck" class="labques">Do you have any other comments?</label>
+        <div class="area">
+          <textarea id="additionalComments" placeholder="Your comments..." cols="3" rows="1"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttonS">
+    <button id="submitFeedback" type="button" onclick="submitFeedback()">Submit & Result</button>
+  </div>
+  <!-- footer sector -->
+  <footer class="footer">
+    <div>
+        <div class="cpy_right">
+            <p>&copy; 2024 Gammal Tech</p>
+        </div>
+    </div>
+  </footer>
+  <script src="scriptrating.js"> </script>
+</body>
+
+</html>

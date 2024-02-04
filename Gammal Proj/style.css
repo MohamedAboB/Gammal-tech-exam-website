@@ -1,0 +1,637 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family:'Poppins', sans-serif;
+    
+  }
+  
+  iframe {
+    border-radius: 15px; 
+    border: 1px solid #ddd; 
+  }
+  header {
+    background-color: rgb(9, 69, 70);
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:130px ;
+    padding-right:130px ;
+  }
+  
+/* .header-flex{
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: cneter;
+} */
+
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .sections {
+    display: flex;
+  }
+  
+  .sections a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .sections {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .sections a {
+      margin: 5px 0;
+    }
+  }
+  
+  .login_button{
+    width: 100px;
+    border-radius: 20px;
+    background-color: #fff; 
+    border: 2px solid #fff;
+    color: rgb(9, 69, 70);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    padding-top: 0px;
+  }
+  .login_button:hover {
+    background-color: rgb(9, 69, 70);
+    color: #fff;
+  }
+
+                                                /*left Card*/
+  
+  .container1 {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    padding-bottom: 25px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 130, 128, 0.5);
+    transition: 0.3s;
+    width: 400px; 
+    height: 400px; 
+    margin: 10px; 
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+  
+  .card .container {
+    padding: 2px 16px;
+    color: #008080;
+  }
+  
+  .video{
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .sec1 {
+    flex: 1;
+    padding-left: 11px;
+    align-items: center;
+    border-radius: 12px;
+    padding-top: 10px;
+  }
+  
+  .sec2 {
+    flex: 1;
+    align-items: flex-start;
+    text-align: center;
+
+  }
+  .button-container {
+    text-align: center;
+  }
+  
+    .container2 button{
+    width: 350px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgb(9, 69, 70); 
+    border: 2px solid rgb(9, 69, 70);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  .container2 button:hover {
+    background-color: white;
+    color: rgb(9, 69, 70);
+  }
+  
+  .button1, .button2, .button3, .buttonL, .buttonR, .buttonE {
+    border: 2px solid rgb(9, 69, 70); 
+    border-radius: 10px; 
+    color: rgb(9, 69, 70); 
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    width: 290px;
+   }
+  
+  .button1:hover, .button2:hover, .button3:hover, .buttonL:hover, .buttonR:hover, .buttonE:hover {
+    background-color: rgb(9, 69, 70);
+    color: #fff;
+  }
+  
+    .sec2 button{
+      text-align: center;
+    }
+  
+  
+  .middle_card{
+    margin-top: -20px;
+   justify-content: center; 
+   align-items: center; 
+  }
+  .middle_card table{
+    border-collapse: separate; 
+    width: 100%;
+  }
+  
+  .middle_card table tr:nth-child(1) td {
+    padding: 12px;
+    margin: 0;
+  }
+  .middle_card table tr:nth-child(2) td {
+    padding-top: 62px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+  
+  }
+  .middle_card table tr:nth-child(3) td {
+    padding: 20px;
+    margin: 10px;
+  }
+  .middle_card table tr:nth-child(4) td {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .middle_card table tr td:nth-child(1) {
+    width: 60%;
+    border-spacing: 0;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .middle_card table tr:nth-child(1) {
+    background-color: rgb(9, 69, 70);
+    color: white;
+  }
+  
+  .middle_card table p{
+    color: gray;
+  }
+  
+  
+                                            /*POPUP NOTIFICATION*/
+  
+   .modal-overlay {
+        box-shadow: rgb(9, 69, 70);
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+  
+    .modal-wrapper {
+        width: 500px;
+        height: 600px;
+        background: ghostwhite;
+        border-radius: 15px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        
+        transform: translate(-50%, -50%);
+    }
+    .modal-wrapper2{
+        width: 450px;
+        height: 500px;
+        background: ghostwhite;
+        border-radius: 15px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .modal-wrapper3{
+        width: 450px;
+        height: 500px;
+        background: ghostwhite;
+        border-radius: 15px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  
+    .open-modal-btn-wrapper {
+        position: fixed;
+        padding: 70px;
+        height: 25%;
+    }
+  
+    .close-modal-btn,
+    .open-modal-btn {
+        border: 2px solid rgb(9, 69, 70); 
+        border-radius: 10px; 
+        color: rgb(9, 69, 70); 
+        padding: 10px 20px; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s; 
+    }
+  
+    .close-btn-wrapper{
+        text-align: center;
+        padding: 50px;
+    }
+    .close-modal-btn:hover,
+    .open-modal-btn:hover{
+        background-color: rgb(9, 69, 70);
+        color: #fff;
+    }
+  
+    .modal-content {
+        margin: 20px auto;
+        text-align: left;
+        max-width: 500px;
+        width: 100%;
+        height: 70%;
+    }
+  
+    .hide {
+        display: none;
+    }
+  
+    .modal-content p{
+        margin: 30px;
+    }
+    .modal-content .headings{
+        text-align: left;
+        padding: 20px;
+        margin: 10px;
+        font-size: large;
+        color: rgb(9, 69, 70);
+    }
+  
+                                            /* Right Card*/
+  
+  .section1 {
+    height: 80%;
+    display: flex;
+    margin-bottom: auto;
+    padding-top: 10px;
+  }
+  .section2 {
+    height: 10%;
+    padding-bottom: 10px;
+    display: flex;
+   justify-content: center; 
+   align-items: center; 
+  }
+  
+  .section1 table {
+    border-collapse: separate; 
+    width: 100%;
+  }
+  .section2 table {
+    border-collapse: collapse; 
+    width: 100%;
+  }
+  
+  .section2 tr {
+    height: 10%px; 
+  }
+  
+  .section1 table tr td {
+    padding: 10px;
+    margin: 0;
+  }
+  .section1 table tr td:nth-child(1) {
+    width: 70%;
+    border-spacing: 0;
+    text-align: center;
+  
+  }
+  .section1 table tr td:nth-child(2) {
+    width: 30%;
+    text-align: center;
+  }
+  .section1 table tr td {
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .section1 table tr td:nth-child(1) {
+    width: 20%;
+    border-spacing: 0;
+    text-align: center;
+  
+  }
+  
+  .section1 table tr td:nth-child(2) {
+    width: 30%;
+    text-align: center;
+  
+  }
+  .section1 table tr td:nth-child(3) {
+    width: 30%;
+    text-align: center;
+  
+  }
+  
+  .section1 table tr td:nth-child(4) {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .section1 table tr:nth-child(1) {
+    background-color: rgb(9, 69, 70);
+    color: white;
+  }
+  
+  
+  table th {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .section2 button{
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%; 
+    max-height: 100%; 
+  }
+  
+  .container2{
+    text-align: center;
+  } 
+  .container2 button{
+    width: 300;
+    height: 250;
+  }
+  
+  
+  
+  
+  
+  .footer{
+    display: flex;
+    background-color: rgb(9, 69, 70);
+    color: #f7f9f9;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* @keyframes pop-in {
+    0% { opacity: 0; transform: scale(0.1); }
+    100% { opacity: 1; transform: scale(1); }
+} */
+
+.footerp1,  .footerp3{
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+}
+
+.footerp1{
+    width: 50%;
+    text-align: center;
+    padding-bottom: 0 auto;
+    margin-top: -7px;
+}
+
+
+
+.footerp3{
+    width: 50%;
+    text-align: right;
+    padding-left: 100px;
+    /* justify-content: space-between; */
+}
+
+/* .footermedia{
+    display: inline-block;
+    border: 1px solid white(255, 255, 255);
+    background-color: transparent;
+    vertical-align: middle;
+    border: 1px solid rgb(5, 62, 62);
+    border-radius: 50%;
+
+    border-radius: 10px;
+    padding: auto;
+    margin: 0 auto;
+    margin-left: 3px;
+    animation:pop-in 0.5s;
+    height: 40px;
+    width: 40px;
+} */
+
+.icon-border{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px ;
+  background-color: rgb(14, 160, 160);
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 30px; /* Adjust the height as needed */
+  width: 30px; /* Adjust the width as needed */
+  margin-right: 20px; /* Adjust the margin as needed */
+  padding-left: 20px;
+}
+
+.mediabar{
+    text-align: right;
+    align-items: right;
+    padding-top: 5px;
+}
+
+.mediabar a{
+  color: white;
+}
+  
+  
+  
+.flex-icon-footer {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+  margin-right: 200px;
+  margin-top: 10px;
+  justify-content: flex-end; /* Align icons to the right */
+  align-items: center; /* Align icons vertically in the center */
+
+  
+}
+
+.flex-icon-footer i {
+  margin-right: 20px; /* Adjust the margin as needed */
+ 
+
+}
+
+  
+  .logof{
+    text-align: center;
+  }
+  
+  .more{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 20px;
+  }
+  
+  .logo{
+    padding-top: 15px;
+    padding-left: 150px;
+  }
+  .watch_more{
+        border: 2px solid rgb(9, 69, 70); 
+        background-color: rgb(9, 69, 70);
+        border-radius: 10px; 
+        color: #fff; 
+        padding: 10px 20px; 
+        width: 200px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s; 
+  }
+  .watch_more:hover{
+    background-color: #fff;
+        color: rgb(9, 69, 70);
+  }
+
+  .close-modal-btnS{
+    border: 2px solid rgb(9, 69, 70); 
+    border-radius: 10px; 
+    color: rgb(9, 69, 70); 
+    padding: 10px 20px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .close-modal-btnS:hover{
+    background-color: rgb(9, 69, 70);
+        color: #fff;
+  }
+  /* More Video */
+ 
+  
+  ::-webkit-scrollbar {
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #6e93f7;
+    border-radius: 25px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4070f4;
+  }
+  .containerSwip {
+    display: flex;
+    gap: 15px;
+    width: 800px;
+    height: 300px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    top: 50%;
+    left:50%;
+  }
+  .containerSwip .cardSwip {
+    display: flex;
+    flex: 0 0 40%;
+    width: 100;
+    height: 250;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top: 10px;
+    border-radius: 12px;
+    background: #008080;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .con{
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+ .loginB{
+    margin: -20px;
+ }
