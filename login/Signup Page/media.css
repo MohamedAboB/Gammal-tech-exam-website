@@ -1,0 +1,110 @@
+
+@media (max-width: 575px) {
+
+    .header-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+      }
+    .sections {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .media-options1, .media-options2{
+        font-size: 15px;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+    }
+    
+    .nav-list.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ensure the main takes the full height of the viewport */
+        margin-bottom: 30px;
+        
+    }
+    
+
+    .container1 {
+        /* You may need to adjust the width and other styles based on your design */
+        width: 100%;
+        max-width: 600px; /* Adjust the maximum width as needed */
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 576px) {
+    .header-line {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 85%;
+    }
+
+    .logo1{
+        margin-left: 50px;
+    }
+    .sections {
+        display: flex;
+        align-items: center; /* Align items in the center */
+        
+    }
+    
+    .sections ul {
+        list-style: none; /* Remove the default list styling */
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sections li {
+        margin-right: 20px;
+    }
+
+    .sections a {
+        text-decoration: none;
+       
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 85vh;
+        margin-bottom: 30px;
+    }
+
+    .container1 {
+        width: 100%;
+        max-width: 600px;
+        box-sizing: border-box;
+    }
+
+    #menuIcon {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none; /* Assuming you don't want the menu button to be visible at this width */
+    }
+}
+

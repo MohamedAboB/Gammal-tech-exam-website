@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page | Gammal Tech Exam</title>
+        <link rel="stylesheet" href = "style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="gammal_logo4.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href = "media.css">
+    </head>
+    
+    <body>
+        <section>
+            <header>
+                <div class="header-line">
+                    <div class="logo1">
+                        <a href="D:\Gammal Proj\main.html">
+                            <img src="2.png" alt="Logo">
+                        </a>
+                    </div>
+    
+                    <div class="menu-icon" id="menuIcon">
+                        <i class='bx bx-menu'></i>
+                    </div>
+                </div>
+    
+                <div class="sections">
+                    <button class="menu-btn"></button>
+                    <ul class="nav-list">
+                        <li><a href="D:\Gammal Proj\main.html">Home</a></li>
+                        <li><a href="https://www.gammal.tech/" target="_blank">About</a></li>
+                        <li>
+                            <a href="D:\Gammal Proj\login\main.html">
+                                <button class="login_button" target="_blank">Log in</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </section>
+        <main>
+        <!--Login Page-->
+        <div class="container1">
+            <div id="signUpPage" class="wrapper">
+                <div class="page">
+                    <form action="#" id="signUpForm">
+                        <h1>Sign up</h1>
+                        <div class="input-box">
+                            <!-- Make the email input required and add a pattern attribute for email format validation -->
+                            <input type="email" id="emailInput" placeholder="Email" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            <span id="emailWarning" class="warning"></span>
+                            <span id="emailMessage" class="message"></span>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" id="password" placeholder="Password" required>
+                            <span id="passwordWarning" class="warning"></span>
+                            <span id="passwordMessage" class="message"></span>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+                            <span id="confirmPasswordWarning" class="warning"></span>
+                            <span id="confirmPasswordMessage" class="message"></span>
+                        </div>
+        
+                        <!-- Change the button type to "button" -->
+                        <button type="button" id="signUpButton" class="btn">Sign up</button>
+        
+                    </form>
+                    
+
+                    
+                </div>
+            </div>
+        
+            <!-- Registration Page -->
+            <div id="registrationPage" class="wrapper" style="display: none;">
+                <div class="page">
+                    <form action="#" id="registrationForm">
+                        <h1>Registration form</h1>
+                        <div class="input-box">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-box">
+                            <!-- Change type to "number" for the Age field -->
+                            <input type="number" placeholder="Age" required min="0" max="100">
+                        </div>
+                        <div class="input-box">
+                            <!-- Use pattern attribute for phone number validation -->
+                            <input type="text" placeholder="Phone Number" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Government/City" required>
+                        </div>
+                        <div class="line2"></div>
+                        <button type="submit" class="btn">Start your Exam</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </main>
+        <footer class="footer">
+            <div>
+                <div class="cpy_right">
+                    <p>&copy; 2024 Gammal Tech</p>
+                </div>
+            </div>
+          </footer>
+          <script src="script.js"></script>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var menuIcon = document.getElementById('menuIcon');
+                var navList = document.querySelector('.nav-list');
+                var menuBtn = document.querySelector('.menu-btn');
+    
+                menuIcon.addEventListener('click', function () {
+                    navList.classList.toggle('show');
+                });
+    
+                menuBtn.addEventListener('click', function () {
+                    navList.classList.toggle('show');
+                });
+            });
+        </script>
+    </body>
+</html>
