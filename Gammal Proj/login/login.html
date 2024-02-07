@@ -1,29 +1,41 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login Page | Gammal Tech Exam</title>
         <link rel="stylesheet" href = "style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="gammal_logo4.png" type="image/x-icon">
+        <link rel="stylesheet" href = "media.css">
     </head>
     
     <body>
         <section>
             <header>
-                <div class = "logo1">
+                <div class="header-line">
+                <div class="logo1">
                     <a href="D:\Gammal Proj\main.html">
-                  <img src = "2.png">
-                  </a>
+                        <img src="2.png" alt="Gammal Tech Logo">
+                    </a>
                 </div>
-              <div class = "sections">
-               
-                <a href = "D:\Gammal Proj\main.html">Home</a>
-                <a href = "https://www.gammal.tech/" target="_blank">About</a>
-                <a href="D:\Gammal Proj\login\login.html">
-                    <button class="login_button" target="_blank">
-                        log in
-                    </button>
-                </a>
+                <div class="menu-icon" id="menuIcon">
+                    <i class='bx bx-menu'></i>
+                </div>
             </div>
-             </header>	
+                <div class="sections">
+                    <ul class="nav-list">
+                        <li><a href="D:\Gammal Proj\main.html">Home</a></li>
+                        <li><a href="https://www.gammal.tech/" target="_blank">About</a></li>
+                        <li>
+                            <a href="D:\Gammal Proj\login\login.html">
+                                <button class="login_button" target="_blank">
+                                    Log In
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>	
             </section>		
         <main>
         <!--Login Page-->
@@ -46,19 +58,9 @@
                     <p>Don't have an account? <a href = "Signup Page\signup.html">Signup</a> </p>
                 </div>
             </form>
-            <div class="line"></div>
+            
 
-            <div class="media-options1">
-                <a href="#" class="field facebook"></a>
-                <i class='bx bxl-facebook-circle facebook-icon' ></i>
-                <span>&nbsp;Login with Facebook</span>
-            </div>
-
-            <div class="media-options2">
-                <a href="#" class="field google"></a>
-                <img src="google.png" alt="" class="google-img">
-                <span>&nbsp;Login with Google</span>
-            </div>
+            
         </div>
         </main>
         <footer class="footer">
@@ -68,5 +70,19 @@
                 </div>
             </div>
           </footer>
+
+
+          <script>
+            // Add this script at the end of your body or in a separate JavaScript file
+document.addEventListener('DOMContentLoaded', function () {
+    var menuIcon = document.getElementById('menuIcon');
+    var navList = document.querySelector('.nav-list');
+
+    menuIcon.addEventListener('click', function () {
+        navList.classList.toggle('show');
+    });
+});
+
+          </script>
     </body>
 </html>
