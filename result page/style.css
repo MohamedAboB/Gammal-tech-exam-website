@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    /* max-width: 1200px; */
+    /* margin: 50px auto; */
+    /* padding: 20px; */
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  }
+
+
+  
+header {
+    background-color: rgb(9, 69, 70);
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:130px ;
+    padding-right:130px ;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .sections {
+    display: flex;
+  }
+  
+  .sections a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+  }
+
+  .login_button{
+    width: 100px;
+    border-radius: 20px;
+    background-color: white; 
+    border: 2px solid #fff;
+    color: rgb(9, 69, 70);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    padding-top: 0px;
+  }
+
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .candidate-details-test {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: teal;
+    margin-left: auto;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+  
+  .candidate-details-test hr{
+    border: 2px solid teal;
+    margin: 20px 0;
+    border-radius: 5px;
+    
+  }
+  .container{
+    display: flex;
+    
+  }
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40p;
+  }
+  
+  .detail-item label {
+    width: 150px;
+    font-weight: bold;
+  }
+  
+  .detail-item input {
+    flex: 1;
+    width: 150px; /* Set the desired width */
+    padding: 8px;
+    font-size: 14px; /* Adjust the font size as needed */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    border-radius: 4px; 
+}
+
+
+  
+  /* table */
+
+  .skills-table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  .skills-table th,
+  .skills-table td {
+    border: 1px solid #ddd;
+    
+    padding: 5px; /* Adjust the padding as needed */
+    text-align: left;
+
+  }
+  
+  .skills-table th {
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 10px; 
+  }
+  
+  .skills-table tr:nth-child(even),
+  .skills-table tr:nth-child(odd) {
+    background-color: lightgray;
+    border-radius: 10px;
+  }
+  .skills-table thead {
+    border-radius: 5px 5px 0 0;
+  }
+
+
+  
+  .skills-table-container {
+    display: flex;
+    width: 100%;
+    
+    justify-content: center;
+    margin-left: 60px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    
+  }
+
+  .footer {
+    background-color: rgb(9, 69, 70);
+    color: #f7f9f9;
+    padding: 10px;
+    position: fixed;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+  }
+  .cpy_right {
+    text-align: center;
+    height: 10px;
+    padding-bottom: 5px;
+  }
+
+
+
+
+  /* Add new styles */
+.nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+  
+  @media (max-width: 768px) {
+    .skills-table-container {
+      grid-template-columns: 1fr;
+    }
+  }
