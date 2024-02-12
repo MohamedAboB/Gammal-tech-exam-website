@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>result page</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="media/all.min.css" />
+    <!-- <link rel="stylesheet" href="media/all.min.css" /> -->
+    <link rel="shortcut icon" href="gammal_logo4.png" type="image/x-icon">
+    <link rel="stylesheet" href="media.css">
   </head>
   <body>
 
@@ -18,8 +20,9 @@
                 </a>
             </div>
             <div class="menu-icon" id="menuIcon">
-                <i class='bx bx-menu'></i>
-            </div>
+              <i class='bx bx-menu'></i>
+          </div>
+          
         </div>
             <div class="sections">
                 <ul class="nav-list">
@@ -161,20 +164,27 @@
     </div>
   </footer>
 
+  
 
-<script>
-    // Add this script at the end of your body or in a separate JavaScript file
-document.addEventListener('DOMContentLoaded', function () {
-var menuIcon = document.getElementById('menuIcon');
-var navList = document.querySelector('.nav-list');
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var menuIcon = document.getElementById('menuIcon');
+        var navList = document.querySelector('.nav-list');
 
-menuIcon.addEventListener('click', function () {
-navList.classList.toggle('show');
-});
-});
+        menuIcon.addEventListener('click', function () {
+            navList.classList.toggle('show');
+        });
 
-  </script>
+        // Close the menu when clicking outside of it
+        document.addEventListener('click', function (event) {
+            var isClickInsideMenu = navList.contains(event.target) || menuIcon.contains(event.target);
 
+            if (!isClickInsideMenu) {
+                navList.classList.remove('show');
+            }
+        });
+    });
+</script>
 
   </body>
 </html>
